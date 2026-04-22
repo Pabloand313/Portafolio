@@ -66,3 +66,34 @@
     margin-top: 20px;
     font-size: 18px;
 }
+
+/* Alinea el logo naranja con el nombre "Pablo Quezada" */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el cuadro naranja y el texto */
+    color: white;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* --- ESTILO PARA EL CÍRCULO --- */
+.imagen-perfil .circulo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Esto hace el círculo */
+    overflow: hidden;   /* Corta la imagen para que no se salga */
+    border: 5px solid orange; /* Opcional: un borde para que combine con el logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-perfil .circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen no se estire */
+}
