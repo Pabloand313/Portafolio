@@ -7,13 +7,13 @@
 }
 
 body { 
-    background-color: #003b94; 
+    background-color: #03347c; 
 }
 
 .hero-section { 
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
-    color: rgb(255, 255, 255)55, 255, 255); 
-    padding-bottom: 80px; 
+    background: linear-gradient(135deg, #1e3c72 0%, #051d46 100%); 
+    color: rgb(255, 255, 255);
+    padding-bottom: 0px; 
 }
 
 .navbar { display: flex; 
@@ -45,10 +45,10 @@ body {
 }
 
 .navlinks a:hover { 
-    color: #f39c12; 
+    color: #0c9e2c; 
 }
 
-/* Contenido Principal del Hero */
+/*Contenido Principal del Hero*/
 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -58,9 +58,13 @@ body {
     margin: 0 auto;
 }
 
+.body {
+    background-color: #ffffff;
+}
+
 .hero-text {
     max-width: 600px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); /*Color Del Texto Principal*/
 }
 
 .hero-text h1 {
@@ -69,7 +73,7 @@ body {
 }
 
 .hero-text h1 span {
-    color: #51d46e; /* Nombre en naranja */
+    color: #51d46e; /*Color del nombre*/
 }
 
 .hero-text h2 {
@@ -86,7 +90,7 @@ body {
     opacity: 0.8;
 }
 
-/* Círculo de Perfil */
+/*Círculo de Perfil*/
 .imagen-perfil .circulo {
     width: 280px;
     height: 280px;
@@ -103,4 +107,96 @@ body {
     width: 100%;
     height: 325px;
     object-fit: contain;
+}
+
+/*Sección Sobre Mí*/
+.container {
+    max-width: 1000px;
+    margin: 40px auto 50px;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h1 {
+    font-size: 32px;
+    color: #000296;
+    display: inline-block;
+    position: relative;
+}
+
+.section-title h1::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #f39c12;
+    margin: 8px auto;
+}
+
+.section-title p {
+    color: #000000;
+}
+
+.sobre-mi {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bio {
+    flex: 2;
+}
+
+.quote {
+    background-color: #f1d4ba;
+    border-left: 5px solid #ff9d00;
+    padding: 20px;
+    margin-top: 30px;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+/*Tarjeta Lateral*/
+.personal-data {
+    flex: 1;
+    background: #f1d4ba;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0);
+    height: fit-content;
+}
+
+.personal-data h3 {
+    color: #1a3a5a;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+}
+
+.personal-data ul {
+    list-style: none;
+}
+
+.personal-data li {
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+    font-size: 14px;
+}
+
+.personal-data li:last-child {
+    border-bottom: none;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .hero-content, .sobre-mi {
+        flex-direction: column;
+        text-align: center;
+    }
+    .circulo {
+        margin-top: 40px;
+    }
 }
