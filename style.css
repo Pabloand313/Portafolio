@@ -3,97 +3,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.navbar {
+body { 
+    background-color: #003b94; 
+}
+
+.hero-section { 
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
+    color: rgb(255, 255, 255)55, 255, 255); 
+    padding-bottom: 80px; 
+}
+
+.navbar { display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 8%; 
+}
+
+.header-brand { display: flex; align-items: center; gap: 15px; }
+
+.logo { background: #f39c12; 
+    padding: 8px 12px; 
+    border-radius: 8px; 
+    font-size: 22px; 
+    font-weight: bold; 
+    color: rgb(255, 255, 255); 
+}
+
+.titulo { 
+    font-size: 20px; 
+    font-weight: 600; 
+    color: rgb(255, 255, 255);
+}
+
+.navlinks a { margin-left: 25px; 
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.8); 
+    transition: 0.3s; 
+}
+
+.navlinks a:hover { 
+    color: #f39c12; 
+}
+
+/* Contenido Principal del Hero */
+.hero-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0853b5;
-    padding: 20px 40px;
-    color: rgb(191, 83, 83);}
-
-.logo{
-    background: orange;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(129, 20, 20);
+    padding: 60px 12%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.navlinks {
-    display: flex;
+.hero-text {
+    max-width: 600px;
+    color: rgb(255, 255, 255);
 }
 
-.navlinks a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: rgb(231, 218, 218);
-    font-size: 20px;
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
 }
 
-.navlinks a:hover{
-    color: rgb(225, 50, 56);
-    transition: 0.3s;
+.hero-text h1 span {
+    color: #51d46e; /* Nombre en naranja */
 }
 
-.contenedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 60px;
-    background: linear-gradient(to right, #071f3f);
-    color: white;
-}
-
-.texto {
-    max-width: 500px;
-}
-
-.texto h1 {
-    font-size: 50px;
-    color: rgb(252, 113, 44);
-}
-
-.texto h2 {
-    margin-top: 20px;
-    font-size: 30px;
-}
-
-.texto p {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-/* Alinea el logo naranja con el nombre "Pablo Quezada" */
-.header-brand {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Espacio entre el cuadro naranja y el texto */
-    color: white;
-}
-
-.titulo {
+.hero-text h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 400;
+    margin-bottom: 25px;
+    opacity: 0.9;
 }
 
-/* --- ESTILO PARA EL CÍRCULO --- */
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Círculo de Perfil */
 .imagen-perfil .circulo {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%; /* Esto hace el círculo */
-    overflow: hidden;   /* Corta la imagen para que no se salga */
-    border: 5px solid orange; /* Opcional: un borde para que combine con el logo */
+    width: 280px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
 }
 
-.imagen-perfil .circulo img {
+.circulo img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen no se estire */
+    height: 325px;
+    object-fit: contain;
 }
