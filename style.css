@@ -200,3 +200,93 @@ body {
         margin-top: 40px;
     }
 }
+
+/* --- SECCIÓN HABILIDADES --- */
+#habilidades {
+    margin-top: 60px;
+}
+
+.skills-table-container {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.skills-table thead {
+    background-color: #1a3a5a;
+    color: white;
+}
+
+.skills-table th, .skills-table td {
+    padding: 15px 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Barras de Progreso */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Colores de las barras */
+.blue { background-color: #2980b9; width: 90%; }
+.green { background-color: #27ae60; width: 80%; }
+.orange { background-color: #f39c12; width: 65%; }
+.purple { background-color: #8e44ad; width: 60%; }
+.red { background-color: #e74c3c; width: 40%; }
+
+/* Tarjetas de Listas (Flexbox) */
+.skills-lists {
+    display: flex;
+    gap: 30px;
+}
+
+.skill-card {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.skill-card h3 {
+    color: #1a3a5a;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-card ul, .skill-card ol {
+    padding-left: 20px;
+    color: #555;
+}
+
+.skill-card li {
+    margin-bottom: 12px;
+}
+
+/* Ajuste Responsivo */
+@media (max-width: 768px) {
+    .skills-lists {
+        flex-direction: column;
+    }
+}
