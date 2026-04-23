@@ -112,7 +112,7 @@ body {
 /* Sección Sobre Mí */
 .container {
     max-width: 1000px;
-    margin: 40px auto 50px; /* Sube un poco para entrar en el hero */
+    margin: 40px auto 50px;
     padding: 0 20px;
 }
 
@@ -142,8 +142,9 @@ body {
 }
 
 .sobre-mi {
+    padding-left: 15%;
     display: flex;
-    gap: 10px;
+    gap: 50px;
     margin-top: 20px;
 }
 
@@ -162,7 +163,6 @@ body {
 
 /* Tarjeta Lateral */
 .personal-data {
-    flex: 1;
     background: #f1d4ba;
     padding: 25px;
     border-radius: 12px;
