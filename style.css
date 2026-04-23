@@ -48,7 +48,7 @@ body {
     color: #0c9e2c; 
 }
 
-/*Contenido Principal del Hero*/
+/* Contenido Principal del Hero */
 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ body {
 
 .hero-text {
     max-width: 600px;
-    color: rgb(255, 255, 255); /*Color Del Texto Principal*/
+    color: rgb(255, 255, 255); /* Color Del Texto Principal */
 }
 
 .hero-text h1 {
@@ -73,7 +73,7 @@ body {
 }
 
 .hero-text h1 span {
-    color: #51d46e; /*Color del nombre*/
+    color: #51d46e; /* Color del nombre */
 }
 
 .hero-text h2 {
@@ -90,7 +90,7 @@ body {
     opacity: 0.8;
 }
 
-/*Círculo de Perfil*/
+/* Círculo de Perfil */
 .imagen-perfil .circulo {
     width: 280px;
     height: 280px;
@@ -109,7 +109,7 @@ body {
     object-fit: contain;
 }
 
-/*Sección Sobre Mí*/
+/* Sección Sobre Mí */
 .container {
     max-width: 1000px;
     margin: 40px auto 50px;
@@ -160,7 +160,7 @@ body {
     border-radius: 4px;
 }
 
-/*Tarjeta Lateral*/
+/* Tarjeta Lateral */
 .personal-data {
     flex: 1;
     background: #f1d4ba;
@@ -190,7 +190,7 @@ body {
     border-bottom: none;
 }
 
-/*Responsive*/
+/* Responsive */
 @media (max-width: 768px) {
     .hero-content, .sobre-mi {
         flex-direction: column;
@@ -201,7 +201,7 @@ body {
     }
 }
 
-/* --- SECCIÓN HABILIDADES --- */
+/* Sección Habilidades */
 #habilidades {
     margin-top: 60px;
 }
@@ -291,7 +291,7 @@ body {
     }
 }
 
-/* --- SECCIÓN PROYECTOS --- */
+/* Sección Proyectos */
 #proyectos {
     margin-top: 60px;
     padding-bottom: 80px;
@@ -371,12 +371,166 @@ figcaption h3 {
 /* Responsividad */
 @media (max-width: 992px) {
     .proyectos-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
     }
 }
 
 @media (max-width: 600px) {
     .proyectos-grid {
-        grid-template-columns: 1fr; /* 1 columna en móviles */
+        grid-template-columns: 1fr; /* 1 columna en dispositivosmóviles */
+    }
+}
+
+/* Sección Contacto */
+.contacto-wrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.contacto-form {
+    flex: 2;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a3a5a;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #1a3a5a;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #2a5298;
+}
+
+/* Info Lateral de Contacto */
+.info-contacto {
+    flex: 1;
+    background-color: #f4f7f9;
+    padding: 40px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.icon-box {
+    background-color: #1a3a5a;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #071f3f;
+    color: white;
+    padding: 60px 8% 20px;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-footer {
+    background-color: #f39c12;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #f39c12;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contacto-wrapper, .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .form-group-row {
+        flex-direction: column;
     }
 }
